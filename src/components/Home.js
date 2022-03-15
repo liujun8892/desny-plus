@@ -1,8 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
+import ImgSlide from './ImgSlide'
+import Viewers from './Viewers'
+import Movie from './Movie'
 
 function Home() {
-  return <Container>home</Container>
+  return (
+    <Container>
+      <ImgSlide />
+      <Viewers />
+      <Movie />
+    </Container>
+  )
 }
 
 export default Home
@@ -11,6 +20,7 @@ const Container = styled.div`
   min-height: calc(100vh - 70px);
   padding: 0 calc(3.5vw + 5px);
   position: relative;
+  overflow-x: hidden;
 
   &:before {
     content: '';

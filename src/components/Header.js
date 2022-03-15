@@ -46,6 +46,7 @@ const Nav = styled.div`
   padding: 0 36px;
   height: 70px;
   background: rgb(9, 11, 19);
+  overflow-x: hidden;
 `
 
 const Logo = styled.img`
